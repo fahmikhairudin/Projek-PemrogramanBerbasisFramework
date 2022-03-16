@@ -1,0 +1,14 @@
+{
+    "posts": [
+      { "id": "1", "NIM": 1941720151, 
+        "Nama": "Fahmi Khairudin", "Alamat": "Sengkaling", "No Hp": "089505839855", 
+        "Tahun Angkatan": "2019", "Pembagian Kerja": "Frontend" },
+      { "id": "2", "NIM": 1941720200, 
+        "Nama": "M As'ad Prabowo", "Alamat": "Batu", "No Hp": "08998817023", 
+        "Tahun Angkatan": "2019", "Pembagian Kerja": "Backend" }
+    ],
+    "comments": [
+      {"Keterangan":"FakeAPI"}
+    ],
+    "profile": {}
+  }
