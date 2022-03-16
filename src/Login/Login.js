@@ -1,41 +1,33 @@
-import React from "react";
-import './Login.css';
+import React, { Component } from "react";
+import './Login.css'
 
-const Login = () =>{
-    return (
-        <div className="flex-row align-items-center">
-            <div className="container mt-5">
-                <div className="row justify-content-center">
-                    <div className="col-md-6">
-                        <div className="card p-4">
-                            <div className="card-body">
-                                <h4>
-                                    Halaman Login
-                                </h4>
-
-                                <div className="form-group mt-4">
-                                    <label>Username</label>
-                                    <input placeholder="Username" className="form-control" />
-                                </div>
-
-                                <div className="form-group mt-4">
-                                    <label>Password</label>
-                                    <input placeholder="Password" className="form-control" />
-                                </div>
-
-                                <div className="form-group mt-4">
-                                    <label>Confirm Password</label>
-                                    <input placeholder="ConfirmPassword" className="form-control" />
-                                </div>
-
-                                <button className="btn btn-primary mt-4">Login</button>
-                            </div>
+class Login extends Component {
+    render() {
+        return (
+            <div className="container">
+                <h2>Form Login</h2>
+                <div className="form">
+                
+                    <form action="">
+                        <div className="form-inline">
+                            <label htmlFor="Username">Username</label>
+                            <input type="text" name="username" id="username" placeholder="Masukan Username" />
                         </div>
-                    </div>
+                        <div className="form-inline">
+                            <label htmlFor="Password">Password</label>
+                            <input type="text" name="password" id="password" placeholder="Masukan Password" />
+                        </div>
+                        <input type="submit" className="submit" value="Login" />
+                        <div className="form-inline">
+                            <input type="checkbox" name="Remember Me" id="remember-me" checked />
+                            <label htmlFor="Remember Me">Remember Me</label>
+                        </div>
+                        <button className="button-cancel">Cancel</button>
+                    </form>
                 </div>
             </div>
-        </div>
-    );
+        )
+    }
 }
 
 export default Login;
